@@ -1,0 +1,28 @@
+DEPENDENCIES
+  apt (~> 4.0.1)
+  firewall (~> 2.5.2)
+  hello_chef_server
+    path: .
+    metadata: true
+  mysql (= 7.2.0)
+
+GRAPH
+  apt (4.0.1)
+    compat_resource (>= 12.10)
+  chef-sugar (3.4.0)
+  compat_resource (12.10.7)
+  firewall (2.5.2)
+    chef-sugar (>= 0.0.0)
+  hello_chef_server (0.1.0)
+    apt (~> 4.0.1)
+    firewall (~> 2.5.2)
+    mysql (= 7.2.0)
+  mysql (7.2.0)
+    smf (>= 0.0.0)
+    yum-mysql-community (>= 0.0.0)
+  rbac (1.0.3)
+  smf (2.2.8)
+    rbac (>= 1.0.1)
+  yum (3.11.0)
+  yum-mysql-community (0.3.0)
+    yum (>= 3.2)

@@ -1,0 +1,7 @@
+source 'https://supermarket.chef.io'
+
+metadata
+
+cookbook 'apt', '~> 4.0.1'
+cookbook 'firewall', '~> 2.5.2'
+cookbook 'mysql', '7.2.0'
